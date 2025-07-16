@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Customer {
 
-    @Id
+    @Id // to mark the cid as primary key in the database mapping we used @ID annotation.
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int cid;
     String name;
